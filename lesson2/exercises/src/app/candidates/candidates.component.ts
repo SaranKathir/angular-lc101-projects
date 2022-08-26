@@ -9,7 +9,7 @@ export class CandidatesComponent implements OnInit {
    missionName = "LaunchCode Moonshot"
 
    candidates = [
-    {name: 'Rusty Rutabaga', data: {age: 5, mass: '0.75 kg', sidekick: 'Blake'}, image: 'assets/images/Blake.png'},
+    {name: 'Rusty Rutabaga', data: {age: 5, mass: '0.75 kg', sidekick: 'Blake'}, image: './assets/images/Blake.png'},
     {name: 'Tessa Tortoise', data: {age: 126, mass: '113 kg', sidekick: 'Sally'}, image: 'assets/images/Sally.png'},
     {name: 'Bernie Beagle', data: {age: 4, mass: '15 kg', sidekick: 'Paul'}, image: 'assets/images/Paul.png'},
     {name: 'Jackalope', data: {age: 45, mass: '33 kg', sidekick: 'Chris'}, image: 'assets/images/Chris.png'},
@@ -22,6 +22,15 @@ export class CandidatesComponent implements OnInit {
 
   ngOnInit() {
   }
+ addToCrew(person:string){
+  if(this.crew){
+    this.crew.push(person);
+  }else{
+
+  }
+ }
+   
+ }
 
   // Code the addToCrew function here:
 
@@ -29,4 +38,4 @@ export class CandidatesComponent implements OnInit {
   // BONUS: Code the changeMissionName function here:
 
 
-}
+
