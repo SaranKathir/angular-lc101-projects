@@ -11,6 +11,8 @@ export class SkillSetComponent implements OnInit {
    alternateColor: string = 'black';
    bulletType: string = 'A';
    changeColor: boolean = true;
+   changeColor1: boolean = true;
+   lcLightBlue:boolean=true;
 
    constructor() { }
 
